@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: linear-gradient(rgba(2, 48, 102, 0.74),rgba(2, 15, 71, 0.753));
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    height: auto;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    animation: bd 5s;
+}
+@keyframes bd{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+h1{
+    text-align: center;
+}
+.jumbotron {
+  background: rgba(255, 255, 255, 0.20);
+  transform-style: preserve-3d;
+  transition: .3s;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  max-width: 60rem;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.well{
+  background: rgb(3, 21, 80);
+  max-width: 60rem;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  border: none;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
+}
+#savebtn{
+    font-size: 1.5rem;
+    background: #0730e9;
+    outline: none;
+    border: none;
+}
+#savebtn:hover{
+    background: #0423ad;
+}
+#clrbtn{
+    font-size: 1.5rem;
+    background: #b904044b;
+    outline: none;
+    float: right;
+    border: none;
+}
+#clrbtn:hover{
+    background: #b4040400;
+}
+
+input:focus{
+    transition-duration: 1s;
+    scale: 1.05;
+}
+
+/* issue list */
+.labid{
+    display: flex;
+    gap: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    border-bottom: 1px solid #333;
+}
+#idcolor{
+    background: rgb(253, 186, 2);
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    border-radius: 4px;
+}
+#idcolorChange{
+    background: rgb(0, 224, 5);
+    color: rgb(255, 255, 255);
+}
+.labid h6{
+    margin-top: 5px;
+}
+.well{
+    opacity: 1;
+    animation: opac 5s;
+}
+@keyframes opac{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.well p glyphicon-user{
+    margin-left: 1rem;
+    padding: 5rem;
+}
+.well #closebtn{
+    background: rgb(4, 161, 38);
+    outline: none;
+    border: none;
+    transition-duration: .7s;
+}
+.well #closebtn:hover{
+    background: rgb(3, 119, 28);
+    transform: translateY(-5px);
+    transition-duration: .7s;
+}
+.well #delbtn{
+    background: rgb(219, 4, 4);
+    outline: none;
+    border: none;
+    transition-duration: .7s;
+}
+.well #delbtn:hover{
+    background: rgb(173, 2, 2);
+    transform: translateY(-5px);
+    transition-duration: .7s;
+}
+
+
+/* back button */
+.backbtn {
+    position: absolute;
+    font-size: 3rem;
+    float: left;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 13rem;
+    color:rgb(255, 255, 255);
+}
+.backbtn a{
+    text-decoration: none;
+    color: inherit;  
+}
